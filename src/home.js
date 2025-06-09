@@ -1,9 +1,21 @@
 import juicyBurgerImg from "./juicy-burger.png";
 
-const homeDiv = document.createElement("div");
-homeDiv.classList.add("home-div");
+let contentDiv;
+let homeDiv;
 
-export default function loadHomePage() {
+init();
+
+export default function displayHomePage() {
+    contentDiv.appendChild(homeDiv);
+}
+
+function init() {
+    contentDiv = document.getElementById("content");
+    homeDiv = document.createElement("div");
+    homeDiv.classList.add("home-div");
+    buildHomePage();
+} 
+function buildHomePage() {
     const burgerImg = document.createElement("img");
     burgerImg.src = juicyBurgerImg;
     burgerImg.alt = "Delicious Burger";
@@ -12,11 +24,9 @@ export default function loadHomePage() {
 
     const heroTxtSection = buildHeroTxtSection();
     homeDiv.appendChild(heroTxtSection);
-
-    return homeDiv;
 }
 
-const buildHeroTxtSection = () => {
+function buildHeroTxtSection() {
     const heroTxtSection = document.createElement("div");
     heroTxtSection.classList.add("hero-txt-section");
     
