@@ -1,3 +1,5 @@
 import "./styles.css";
+import loadHomePage from "./home.js";
 
-console.log("Hello, World");
+const content = document.getElementById("content");
+content.appendChild(loadHomePage());
