@@ -43,11 +43,6 @@ function buildHeroTxtSection() {
     `;
     heroTxtSection.appendChild(heroSubTxt);
 
-    const viewMenuBtn = document.createElement("button");
-    viewMenuBtn.type = "button";
-    viewMenuBtn.classList.add("nav-btn");
-    viewMenuBtn.innerText = "View our Menu";
-    heroTxtSection.appendChild(viewMenuBtn);
 
     return heroTxtSection;
 }
