@@ -92,18 +92,24 @@ h2.hero-subtxt {
     margin-bottom: 2rem;
 }
 
+header h2 {
+  color:var(--amaranth-purple);
+}
+
 header {
     height: 10vh;
     background-color: var(--wenge);
+    display:flex;
+    padding: 0 10%;
+    align-items: center;
+    gap:2rem
 }
 
 nav {
     display:flex;
-    align-items: center;
     gap:1rem;
     height:100%;
-    width:75%;
-    margin:0 auto;
+    padding:1rem 0;
 }
 
 .nav-btn {
@@ -119,10 +125,11 @@ nav {
     transition: all .3s ease;
 }
 
-.nav-btn:hover {
+.nav-btn:hover, .selected-nav-btn {
     background-color: var(--cherry-blossom);
     color:var(--wenge);
 }
+
 
 .home-div {
     display:grid;
