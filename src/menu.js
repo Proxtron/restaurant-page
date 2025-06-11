@@ -1,5 +1,5 @@
+import { contentDiv } from "./index.js";
 
-let contentDiv;
 let menuDiv;
 const menuItems = [];
 
@@ -10,7 +10,6 @@ export default function displayMenuPage() {
 }
 
 function init() {
-    contentDiv = document.getElementById("content");
     menuDiv = document.createElement("div");
     menuDiv.classList.add("menu-div");
 

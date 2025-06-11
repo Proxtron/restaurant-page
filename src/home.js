@@ -1,6 +1,6 @@
 import juicyBurgerImg from "./juicy-burger.png";
+import { contentDiv } from "./index.js";
 
-let contentDiv;
 let homeDiv;
 
 init();
@@ -10,11 +10,11 @@ export default function displayHomePage() {
 }
 
 function init() {
-    contentDiv = document.getElementById("content");
     homeDiv = document.createElement("div");
     homeDiv.classList.add("home-div");
     buildHomePage();
 } 
+
 function buildHomePage() {
     const burgerImg = document.createElement("img");
     burgerImg.src = juicyBurgerImg;
@@ -51,17 +51,3 @@ function buildHeroTxtSection() {
 
     return heroTxtSection;
 }
-
-/*
-<div class="home-div">
-    <img src="juicy-burger.png" width=700 alt="Delicious Burger">
-    <div class="hero-txt-section">
-        <h1 class="hero-txt">Big. Juicy. Burger.</h1>
-        <h2 class="hero-subtxt">
-            Our 100% Angus beef patties come with enough grease to stop the heart of a marathon runner!
-            Come get yours today!
-        </h2>
-        <button type="button" class="nav-btn">View our Menu</button>
-    </div>
-</div>
-*/

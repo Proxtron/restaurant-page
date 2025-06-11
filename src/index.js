@@ -2,5 +2,7 @@ import "./styles.css";
 import displayHomePage from "./home.js";
 import displayMenuPage from "./menu.js";
 
-document.getElementById("content");
+export const contentDiv = document.getElementById("content");
 
+// displayHomePage();
+displayMenuPage();
